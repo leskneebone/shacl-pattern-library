@@ -6,5 +6,4 @@ The initial set tests architecture rather than catalogue breadth:
 2. [`controlled-values/member-of-scheme`](controlled-values/member-of-scheme/) tests abstract property and concept-scheme roles, mapping safety and entailment assumptions.
 3. [`dates/ordered-interval`](dates/ordered-interval/) tests cross-property comparison, datatype/timezone policy and report portability.
 
-Each starts with a design brief. Executable modules and fixtures should be added only after their parameter and outcome contracts are reviewed.
-
+Each starts with a design brief. Executable modules and fixtures should be added only after their parameter definitions and expected outcomes are reviewed.

@@ -20,7 +20,7 @@ Exact report graph equality is not generally portable. Core tests compare confor
 
 | Maturity | Minimum evidence |
 |---|---|
-| Experimental | Contract draft, syntax-valid RDF, examples and known limitations |
+| Experimental | Pattern contract draft, syntax-valid RDF, examples and known limitations |
 | Candidate | Complete tests, security/performance review, two independent conforming engines for claimed portable tiers, unresolved issues published |
 | Stable | Candidate feedback resolved, frozen semantics, migration/version plan, reproducible signed release archive and steward approval |
 | Deprecated | Reason, replacement or alternative, migration guidance, continued identifier resolution |
@@ -28,4 +28,3 @@ Exact report graph equality is not generally portable. Core tests compare confor
 ## Operational tests
 
 Use bounded adversarial fixtures for long paths, large value sets, recursion, expensive regexes and SPARQL joins. Record hardware-independent budgets where possible (dataset size, result count, query shape) and measured budgets as evidence, not universal guarantees. Validation over untrusted data should support time, memory and result-count limits.
-

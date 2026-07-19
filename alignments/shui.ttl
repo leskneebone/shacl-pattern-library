@@ -1,0 +1,26 @@
+PREFIX dcat: <http://www.w3.org/ns/dcat#>
+PREFIX dcterms: <http://purl.org/dc/terms/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX schema: <https://schema.org/>
+PREFIX shui: <http://www.w3.org/ns/shacl-ui#>
+PREFIX spl: <https://w3id.org/shacl-pattern-library/dev/>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+
+<https://w3id.org/shacl-pattern-library/dev/alignment/shui>
+    a dcat:Dataset ;
+    dcterms:title "SPL alignment with SHACL 1.2 User Interfaces"@en ;
+    dcterms:description "Optional, experimental alignment statements between particular SPL pattern roles and the SHACL 1.2 User Interfaces vocabulary."@en ;
+    dcterms:source <https://www.w3.org/TR/2026/WD-shacl12-ui-20260526/> ;
+    dcat:version "0.1.0-dev" ;
+    schema:dateModified "2026-07-19"^^xsd:date ;
+.
+
+# This role satisfies both definitions. The statement deliberately does not
+# imply that every shui:PropertyRole is an spl:PatternRole, or vice versa.
+<https://w3id.org/shacl-pattern-library/dev/pattern/preferred-label-per-language/role/label-value-path>
+    a shui:PropertyRole ;
+    dcterms:relation shui:LabelRole ;
+    rdfs:seeAlso
+        <https://www.w3.org/TR/2026/WD-shacl12-ui-20260526/#property-roles> ,
+        <https://www.datashapes.org/propertyroles.html> ;
+.

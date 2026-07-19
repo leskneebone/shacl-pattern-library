@@ -1,0 +1,26 @@
+PREFIX adms: <http://www.w3.org/ns/adms#>
+PREFIX dcat: <http://www.w3.org/ns/dcat#>
+PREFIX dcterms: <http://purl.org/dc/terms/>
+PREFIX spl: <https://w3id.org/shacl-pattern-library/dev/>
+
+<https://w3id.org/shacl-pattern-library/dev/pattern/preferred-label-per-language>
+    a spl:ValidationPattern ;
+    dcterms:title "Preferred label per language"@en ;
+    dcterms:description "Limits preferred labels to at most one value for each language under an explicit language policy."@en ;
+    dcat:hasVersion <https://w3id.org/shacl-pattern-library/dev/pattern/preferred-label-per-language/0.1.0-dev> ;
+.
+
+<https://w3id.org/shacl-pattern-library/dev/pattern/preferred-label-per-language/0.1.0-dev>
+    a spl:PatternVersion ;
+    dcterms:title "Preferred label per language 0.1.0 development pattern version"@en ;
+    dcat:isVersionOf <https://w3id.org/shacl-pattern-library/dev/pattern/preferred-label-per-language> ;
+    dcat:version "0.1.0-dev" ;
+    adms:status <https://w3id.org/shacl-pattern-library/dev/status/experimental> ;
+    dcterms:hasPart <https://w3id.org/shacl-pattern-library/dev/pattern/preferred-label-per-language/role/label-value-path> ;
+.
+
+<https://w3id.org/shacl-pattern-library/dev/pattern/preferred-label-per-language/role/label-value-path>
+    a spl:PatternRole ;
+    dcterms:title "label value path"@en ;
+    dcterms:description "Selects values that serve as preferred human-readable labels for the focus node."@en ;
+.

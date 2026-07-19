@@ -19,11 +19,10 @@ Patterns, released pattern versions, executable module versions, abstract roles,
 ## Identifier policy to test
 
 - A version-independent pattern IRI identifies the conceptual lineage.
-- An immutable version IRI identifies one released contract.
+- An immutable version IRI identifies one released normative pattern description.
 - Executable artefact IRIs are version-specific and content-addressed in manifests.
 - Version-independent IRIs may resolve to the current recommended version but must not be imported as mutable executable content.
 - Renaming creates an alias record; semantic replacement uses `replacedBy`; retirement never recycles an IRI.
-- Patch releases cannot alter validation outcomes for the same RDF dataset, declared entailment and configuration. Outcome changes require at least a minor version; incompatible contract changes require a major version.
+- Patch releases cannot alter validation outcomes for the same RDF dataset, declared entailment and configuration. Outcome changes require at least a minor version; incompatible normative semantic changes require a major version.
 
 Before a stable release, test persistence, redirect, backup, domain-loss and governance-transfer scenarios and replace the development base through an explicit migration decision.
-

@@ -1,6 +1,6 @@
 # Concept assessment and risk register
 
-The concept is useful, but a collection of generic shapes is the wrong centre of gravity. SHACL constraints bind validation logic to targets, paths, graph topology, entailment, engine behaviour, and operational policy. Reuse should therefore package a design contract and evidence around executable material.
+The concept is useful, but a collection of generic shapes is the wrong centre of gravity. SHACL constraints bind validation logic to targets, paths, graph topology, entailment, engine behaviour, and operational policy. Reuse should therefore package a pattern contract and evidence around executable material.
 
 The smallest useful **catalogued** unit is a pattern. Its smallest executable unit may be a constraint component or shape, and its deployable unit is a module. These units should not be conflated.
 
@@ -24,4 +24,3 @@ The smallest useful **catalogued** unit is a pattern. Its smallest executable un
 ## Missing requirements now made explicit
 
 Accessibility of documentation, deterministic builds, canonical artefact digests, blank-node policy, RDF dataset/graph assumptions, entailment regime, severity policy, validation report comparison rules, engine capability discovery, resource budgets, threat modelling, dependency locking, changelog/migration guidance, translation governance, offline operation, and reproducible release archives all belong in the design.
-

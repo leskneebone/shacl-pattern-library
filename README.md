@@ -32,9 +32,8 @@ The primary reuse scenarios are selection and adaptation, deterministic assembly
 
 ## Repository layout
 
-The repository separates catalogue vocabulary (`ontology/`), pattern packages (`patterns/`), abstract-to-local mappings (`mappings/`), assembly tooling (`tooling/`), publication profiles (`profiles/`), cross-pattern examples (`examples/`), and repository-level tests (`tests/`). This layout is provisional and follows the architecture rather than defining it.
+The repository separates catalogue vocabulary (`ontology/`), opt-in external vocabulary alignments (`alignments/`), pattern packages (`patterns/`), abstract-to-local mappings (`mappings/`), assembly tooling (`tooling/`), publication profiles (`profiles/`), cross-pattern examples (`examples/`), and repository-level tests (`tests/`). This layout is provisional and follows the architecture rather than defining it.
 
 ## Licence and responsibility
 
 The work is offered under [CC0 1.0](LICENSE) for maximally permissive reuse, subject to the separate [disclaimer](DISCLAIMER.md). Licence choice remains an architectural experiment and should be reviewed before a stable release.
-

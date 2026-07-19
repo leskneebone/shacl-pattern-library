@@ -3,7 +3,7 @@
 ## Four distinct layers
 
 1. **Catalogue** — descriptive RDF about identity, versions, maturity, provenance, applicability, parameters, dependencies, compatibility, licensing and relationships. Catalogue records are not executable constraints.
-2. **Modules** — immutable executable SHACL artefacts with declared feature tier and no implicit application targeting unless the contract says otherwise.
+2. **Modules** — immutable executable SHACL artefacts with a declared feature tier and no implicit application targeting unless the module metadata explicitly declares it.
 3. **Mappings** — consumer-controlled assertions mapping abstract roles (class, property, datatype, node kind or value scheme) to local terms. A mapping states a substitution purpose and direction; it is not an unrestricted ontological equivalence claim.
 4. **Assembly** — deterministic selection, parameter binding, mapping, target injection and conflict checks producing a self-contained application shapes graph plus a manifest.
 
@@ -37,4 +37,3 @@ Closed shapes are not compositional by default: two modules may each reject prop
 ## Dependency and conflict model
 
 Dependencies are version-ranged pattern/module requirements with feature tiers. Releases resolve them to exact versions and digests. Conflicts may be declared explicitly; the assembler should also detect incompatible cardinalities, disjoint node-kind/datatype demands, unresolved roles, multiple closures, and unsupported engine features. Detection is advisory until a formal constraint-algebra subset is defined.
-

@@ -10,3 +10,8 @@ Fixtures must cover repeated same-language labels, different languages, case var
 
 Direct import: no. This is an assembly-only template until roles, targets and language policy are bound.
 
+The initial catalogue [`manifest.ttl`](manifest.ttl) defines its label-value
+path as an `spl:PatternRole`. The optional
+[`alignments/shui.ttl`](../../../alignments/shui.ttl) graph additionally types
+that particular role as `shui:PropertyRole`; it does not assert a universal
+relationship between the SPL and SHUI classes.

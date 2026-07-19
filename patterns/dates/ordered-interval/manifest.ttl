@@ -1,0 +1,62 @@
+PREFIX adms: <http://www.w3.org/ns/adms#>
+PREFIX dcat: <http://www.w3.org/ns/dcat#>
+PREFIX dcterms: <http://purl.org/dc/terms/>
+PREFIX spl: <https://w3id.org/shacl-pattern-library/dev/>
+
+<https://w3id.org/shacl-pattern-library/dev/pattern/ordered-interval>
+    a spl:ValidationPattern ;
+    dcterms:title "Ordered interval"@en ;
+    dcterms:description "Requires bound start values not to be later than bound end values under an explicit comparison policy."@en ;
+    dcat:hasVersion <https://w3id.org/shacl-pattern-library/dev/pattern/ordered-interval/0.1.0-dev> ;
+.
+
+<https://w3id.org/shacl-pattern-library/dev/pattern/ordered-interval/0.1.0-dev>
+    a spl:PatternVersion ;
+    dcterms:title "Ordered interval 0.1.0 development pattern version"@en ;
+    dcat:isVersionOf <https://w3id.org/shacl-pattern-library/dev/pattern/ordered-interval> ;
+    dcat:version "0.1.0-dev" ;
+    adms:status <https://w3id.org/shacl-pattern-library/dev/status/experimental> ;
+    dcterms:hasPart
+        <https://w3id.org/shacl-pattern-library/dev/pattern/ordered-interval/role/start> ,
+        <https://w3id.org/shacl-pattern-library/dev/pattern/ordered-interval/role/end> ,
+        <https://w3id.org/shacl-pattern-library/dev/pattern/ordered-interval/parameter/equality-policy> ,
+        <https://w3id.org/shacl-pattern-library/dev/pattern/ordered-interval/parameter/cardinality-policy> ,
+        <https://w3id.org/shacl-pattern-library/dev/pattern/ordered-interval/parameter/datatype-policy> ,
+        <https://w3id.org/shacl-pattern-library/dev/pattern/ordered-interval/parameter/timezone-policy> ;
+.
+
+<https://w3id.org/shacl-pattern-library/dev/pattern/ordered-interval/role/start>
+    a spl:PatternRole ;
+    dcterms:title "start value path"@en ;
+    dcterms:description "Selects the value or values treated as interval starts."@en ;
+.
+
+<https://w3id.org/shacl-pattern-library/dev/pattern/ordered-interval/role/end>
+    a spl:PatternRole ;
+    dcterms:title "end value path"@en ;
+    dcterms:description "Selects the value or values treated as interval ends."@en ;
+.
+
+<https://w3id.org/shacl-pattern-library/dev/pattern/ordered-interval/parameter/equality-policy>
+    a spl:Parameter ;
+    dcterms:title "equality policy"@en ;
+    dcterms:description "Declares whether equal start and end values conform."@en ;
+.
+
+<https://w3id.org/shacl-pattern-library/dev/pattern/ordered-interval/parameter/cardinality-policy>
+    a spl:Parameter ;
+    dcterms:title "cardinality policy"@en ;
+    dcterms:description "Declares endpoint presence and cardinality requirements before values are compared."@en ;
+.
+
+<https://w3id.org/shacl-pattern-library/dev/pattern/ordered-interval/parameter/datatype-policy>
+    a spl:Parameter ;
+    dcterms:title "datatype policy"@en ;
+    dcterms:description "Declares the accepted datatypes and whether any cross-datatype comparison is defined."@en ;
+.
+
+<https://w3id.org/shacl-pattern-library/dev/pattern/ordered-interval/parameter/timezone-policy>
+    a spl:Parameter ;
+    dcterms:title "timezone policy"@en ;
+    dcterms:description "Declares treatment of timezone-aware and timezone-less temporal values."@en ;
+.

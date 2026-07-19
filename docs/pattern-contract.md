@@ -1,5 +1,19 @@
 # Pattern contract
 
+In this project, a **pattern contract** is the complete normative description of
+one validation pattern version: the circumstances in which it applies, the
+constraint meaning, its roles and parameters, execution assumptions,
+customisation limits, and expected validation outcomes. The term borrows from
+design by contract. It is not a legal agreement and is not currently a separate
+kind of RDF resource; the versioned validation pattern is the thing carrying
+these statements.
+
+Use the specific terms **applicability conditions**, **execution assumptions**,
+**parameter definitions**, and **expected outcomes** when referring to only one
+part of the contract. Avoid compounds such as “applicability contract” and
+“execution contract”, which suggest additional objects that the architecture
+does not define.
+
 Every published pattern package must state:
 
 1. stable pattern identifier and immutable version identifier;
@@ -18,4 +32,3 @@ Every published pattern package must state:
 14. machine-readable manifest and artefact digest.
 
 The constraint meaning is normative. Labels, descriptions, examples and messages explain it but cannot silently change it. A missing requested language falls back in this order: exact language tag, primary language subtag, project default language (initially English), then an untagged message. Engines may choose differently, so applications needing deterministic language should select messages during assembly.
-
