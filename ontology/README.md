@@ -31,7 +31,7 @@ validation designs.
 
 ## Validation
 
-Validate the OntPub MUST requirements with Kurra's locally cached Ontology
+Validate the OntPub MUST requirements with [Kurra](https://github.com/Kurrawong/kurra) locally cached Ontology
 Publication Profile validator (currently validator ID 20):
 
 ```shell
