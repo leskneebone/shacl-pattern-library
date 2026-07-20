@@ -5,7 +5,7 @@ vocabulary. Each external vocabulary receives a separate graph so its target
 version, provenance, confidence, compatibility, and maintenance status can be
 reviewed independently.
 
-Alignment graphs are optional and are not imported by the core SPL ontology.
+Alignment graphs are optional and are not imported by the core SPC ontology.
 Consumers choose which graphs and entailments to accept. An alignment must cite
 the dated version of an evolving source specification wherever possible.
 

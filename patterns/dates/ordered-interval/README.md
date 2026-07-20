@@ -3,10 +3,10 @@
 **Question tested:** when is comparing start and end values portable and semantically honest?
 
 The development IRI
-`https://w3id.org/shacl-pattern-library/dev/pattern/ordered-interval`
+`https://w3id.org/shacl-pattern-catalogue/dev/pattern/ordered-interval`
 identifies the conceptual validation pattern. It is an instance of
-`spl:ValidationPattern`; it is not a class or property. In particular, there is
-no `spl:orderedInterval` predicate.
+`spc:ValidationPattern`; it is not a class or property. In particular, there is
+no `spc:orderedInterval` predicate.
 
 The pattern means: for each explicitly targeted focus node, values selected by
 a bound start role must not be later than values selected by a bound end role,

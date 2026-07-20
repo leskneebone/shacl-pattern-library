@@ -1,6 +1,6 @@
 # IRI and namespace requirements
 
-No permanent namespace is selected. Examples use `https://w3id.org/shacl-pattern-library/dev/` solely as an unmistakably provisional development base; no redirect has been registered.
+No permanent namespace is selected. Examples use `https://w3id.org/shacl-pattern-catalogue/dev/` solely as an unmistakably provisional development base; no redirect has been registered.
 
 ## Resources requiring IRIs
 

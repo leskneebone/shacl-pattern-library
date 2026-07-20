@@ -8,7 +8,7 @@
 - **AF**: SHACL Advanced Features, with each required feature named.
 - **Engine-specific**: implementation extensions; never advertised as portable.
 
-Portability is claimed per module and engine/version matrix, not for the library as a whole.
+Portability is claimed per module and engine/version matrix, not for the catalogue as a whole.
 
 ## Minimum test suite
 

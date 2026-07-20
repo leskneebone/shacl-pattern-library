@@ -1,14 +1,16 @@
-# SHACL Pattern Library
+# SHACL Pattern Catalogue
 
 An exploratory, personally maintained project investigating whether common SHACL validation designs can be made safer to reuse than copied shapes.
 
-The provisional name describes a library of **patterns**: documented validation designs that may include executable modules, parameters, mappings, examples, and tests. A pattern is not necessarily a shapes graph that consumers should import unchanged.
+The name describes a **catalogue of patterns**: documented validation designs that may include executable modules, parameters, mappings, examples, and tests. A pattern is not necessarily a shapes graph that consumers should import unchanged.
 
 ## Status
 
 This repository is pre-alpha and architectural. Nothing here is a standard, a universal best practice, or production-ready. Its ownership, governance, canonical namespace, and publication authority are deliberately undecided.
 
-The current development namespace is `https://w3id.org/shacl-pattern-library/dev/` as a conspicuous placeholder only. It is not registered, promised, or suitable for external dependency. See [IRI and namespace requirements](docs/iri-and-namespace-requirements.md).
+The current development namespace is `https://w3id.org/shacl-pattern-catalogue/dev/` as a conspicuous placeholder only. It is not registered, promised, or suitable for external dependency. See [IRI and namespace requirements](docs/iri-and-namespace-requirements.md).
+
+Examples abbreviate that namespace as `spc:`. The repository name, vocabulary file, and development IRIs use the Australian spelling “catalogue”; “catalog” is an English-language search label only.
 
 ## Intended users and scenarios
 

@@ -3,7 +3,7 @@
 Status: provisional  
 Date: 2026-07-19
 
-The first SPL ontology defines necessary local classes but no local properties.
+The first SPC ontology defines necessary local classes but no local properties.
 Pattern manifests initially reuse relationships from DCAT 3, DCTERMS, ADMS,
 PROV-O, SHACL, OWL, and other established vocabularies where their published
 definitions fit.

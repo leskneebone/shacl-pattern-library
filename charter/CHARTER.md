@@ -14,9 +14,8 @@ The project will not define a universal domain model, infer semantic equivalence
 
 ## Success criteria
 
-Reuse is successful when a competent shape author can determine applicability, specialise a pattern without hidden semantic changes, reproduce its tests, understand engine and threat limitations, and upgrade or remain pinned deliberately. If copying remains clearer or safer, the library has failed its purpose.
+Reuse is successful when a competent shape author can determine applicability, specialise a pattern without hidden semantic changes, reproduce its tests, understand engine and threat limitations, and upgrade or remain pinned deliberately. If copying remains clearer or safer, the catalogue has failed its purpose.
 
 ## Principles
 
 Evidence before maturity; explicit assumptions; least-powerful portable feature set; deterministic generation; versioned semantics; human-reviewable output; no implicit targets; conservative equivalence; accessible multilingual metadata; and honest negative claims.
-

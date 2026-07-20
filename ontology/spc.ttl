@@ -4,26 +4,27 @@ PREFIX owl: <http://www.w3.org/2002/07/owl#>
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 PREFIX schema: <https://schema.org/>
 PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
-PREFIX spl: <https://w3id.org/shacl-pattern-library/dev/>
+PREFIX spc: <https://w3id.org/shacl-pattern-catalogue/dev/>
 PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
-<https://w3id.org/shacl-pattern-library/dev/ontology>
+<https://w3id.org/shacl-pattern-catalogue/dev/ontology>
     a owl:Ontology ;
-    dcterms:title "SHACL Pattern Library vocabulary"@en ;
+    dcterms:title "SHACL Pattern Catalogue vocabulary"@en ;
     dcterms:description "Provisional classes for describing reusable SHACL validation patterns and their supporting resources."@en ;
     dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-    schema:codeRepository "https://github.com/leskneebone/shacl-pattern-library"^^xsd:anyURI ;
+    schema:codeRepository "https://github.com/leskneebone/shacl-pattern-catalogue"^^xsd:anyURI ;
     schema:creator <https://github.com/leskneebone> ;
     schema:dateCreated "2026-07-19"^^xsd:date ;
     schema:dateIssued "2026-07-19"^^xsd:date ;
-    schema:dateModified "2026-07-19"^^xsd:date ;
+    schema:dateModified "2026-07-20"^^xsd:date ;
     schema:publisher <https://github.com/leskneebone> ;
-    owl:versionIRI <https://w3id.org/shacl-pattern-library/dev/ontology/0.1.0-dev> ;
+    owl:versionIRI <https://w3id.org/shacl-pattern-catalogue/dev/ontology/0.1.0-dev> ;
     owl:versionInfo "0.1.0-dev" ;
     skos:definition "An ontology for describing reusable SHACL validation patterns and their supporting resources."@en ;
-    skos:historyNote "Initial development draft derived from the architecture and experimental pattern specifications in the SHACL Pattern Library repository."@en ;
-    skos:prefLabel "SHACL Pattern Library vocabulary"@en ;
-    rdfs:seeAlso <https://github.com/leskneebone/shacl-pattern-library> ;
+    skos:historyNote "Initial development draft derived from the architecture and experimental pattern specifications in the SHACL Pattern Catalogue repository."@en ;
+    skos:altLabel "SHACL Pattern Catalog vocabulary"@en-US ;
+    skos:prefLabel "SHACL Pattern Catalogue vocabulary"@en ;
+    rdfs:seeAlso <https://github.com/leskneebone/shacl-pattern-catalogue> ;
 .
 
 <https://github.com/leskneebone>
@@ -32,73 +33,73 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     schema:name "Les Kneebone" ;
 .
 
-spl:ValidationPattern
+spc:ValidationPattern
     a owl:Class ;
     skos:prefLabel "Validation pattern"@en ;
     skos:definition "A catalogued, reusable validation design that states its constraint meaning, applicability conditions, permitted customisation, supporting resources, and evidence."@en ;
-    rdfs:isDefinedBy <https://w3id.org/shacl-pattern-library/dev/ontology> ;
+    rdfs:isDefinedBy <https://w3id.org/shacl-pattern-catalogue/dev/ontology> ;
     rdfs:subClassOf dcat:Resource ;
 .
 
-spl:PatternVersion
+spc:PatternVersion
     a owl:Class ;
     skos:prefLabel "Pattern version"@en ;
     skos:definition "An immutable version of the normative description of a validation pattern."@en ;
-    rdfs:isDefinedBy <https://w3id.org/shacl-pattern-library/dev/ontology> ;
-    rdfs:subClassOf spl:ValidationPattern ;
+    rdfs:isDefinedBy <https://w3id.org/shacl-pattern-catalogue/dev/ontology> ;
+    rdfs:subClassOf spc:ValidationPattern ;
 .
 
-spl:PatternModule
+spc:PatternModule
     a owl:Class ;
     skos:prefLabel "Pattern module"@en ;
     skos:definition "A versioned package of SHACL constraints or supporting shapes associated with a validation pattern."@en ;
-    rdfs:isDefinedBy <https://w3id.org/shacl-pattern-library/dev/ontology> ;
+    rdfs:isDefinedBy <https://w3id.org/shacl-pattern-catalogue/dev/ontology> ;
     rdfs:subClassOf dcat:Resource ;
 .
 
-spl:ExecutableModule
+spc:ExecutableModule
     a owl:Class ;
     skos:prefLabel "Executable module"@en ;
     skos:definition "A pattern module whose required bindings are resolved and whose constraints can be used, without further pattern specialisation, as or within a shapes graph for validation under its declared feature, entailment, data-graph, and invocation assumptions."@en ;
-    rdfs:isDefinedBy <https://w3id.org/shacl-pattern-library/dev/ontology> ;
-    rdfs:subClassOf spl:PatternModule , dcat:Dataset ;
+    rdfs:isDefinedBy <https://w3id.org/shacl-pattern-catalogue/dev/ontology> ;
+    rdfs:subClassOf spc:PatternModule , dcat:Dataset ;
 .
 
-spl:PatternTemplate
+spc:PatternTemplate
     a owl:Class ;
     skos:prefLabel "Pattern template"@en ;
     skos:definition "A pattern module that requires declared bindings or specialisation before it is executable."@en ;
-    rdfs:isDefinedBy <https://w3id.org/shacl-pattern-library/dev/ontology> ;
-    rdfs:subClassOf spl:PatternModule ;
+    rdfs:isDefinedBy <https://w3id.org/shacl-pattern-catalogue/dev/ontology> ;
+    rdfs:subClassOf spc:PatternModule ;
 .
 
-spl:PatternRole
+spc:PatternRole
     a owl:Class ;
     skos:prefLabel "Pattern role"@en ;
     skos:definition "A named model-dependent participant in a validation pattern, such as a class, property, path, datatype, or value scheme, that may be bound to an application model resource or path under declared mapping rules."@en ;
-    rdfs:isDefinedBy <https://w3id.org/shacl-pattern-library/dev/ontology> ;
+    rdfs:isDefinedBy <https://w3id.org/shacl-pattern-catalogue/dev/ontology> ;
 .
 
-spl:Parameter
+spc:Parameter
     a owl:Class ;
     skos:prefLabel "Parameter"@en ;
     skos:definition "A named configuration input with declared permitted values and effects on pattern specialisation or validation behaviour."@en ;
-    rdfs:isDefinedBy <https://w3id.org/shacl-pattern-library/dev/ontology> ;
+    rdfs:isDefinedBy <https://w3id.org/shacl-pattern-catalogue/dev/ontology> ;
     rdfs:subClassOf dcat:Resource ;
 .
 
-spl:Mapping
+spc:Mapping
     a owl:Class ;
     skos:prefLabel "Mapping"@en ;
     skos:definition "A consumer-controlled assertion that binds an abstract role to an application model term or path for a stated substitution purpose and scope."@en ;
-    rdfs:isDefinedBy <https://w3id.org/shacl-pattern-library/dev/ontology> ;
+    rdfs:isDefinedBy <https://w3id.org/shacl-pattern-catalogue/dev/ontology> ;
     rdfs:subClassOf dcat:Resource ;
 .
 
-spl:Assembly
+spc:Assembly
     a owl:Class ;
     skos:prefLabel "Assembly"@en ;
     skos:definition "A resolved application-specific shapes graph together with the manifest needed to identify its pattern versions, mappings, parameters, targets, dependencies, and build provenance."@en ;
-    rdfs:isDefinedBy <https://w3id.org/shacl-pattern-library/dev/ontology> ;
+    rdfs:isDefinedBy <https://w3id.org/shacl-pattern-catalogue/dev/ontology> ;
     rdfs:subClassOf dcat:Dataset ;
 .

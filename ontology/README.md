@@ -1,7 +1,7 @@
 # Catalogue vocabulary
 
-[`spl.ttl`](spl.ttl) is the first development draft of the SHACL Pattern
-Library vocabulary. It defines only local classes that the architecture needs.
+[`spc.ttl`](spc.ttl) is the first development draft of the SHACL Pattern
+Catalogue vocabulary. It defines only local classes that the architecture needs.
 It deliberately defines no local properties yet.
 
 Relationships in the first manifests reuse DCAT 3, DCTERMS, ADMS, PROV-O,
@@ -16,13 +16,13 @@ ontology is an experiment, not a released vocabulary.
 
 ## Initial distinctions
 
-- A `spl:ValidationPattern` is the conceptual catalogue item.
-- A `spl:PatternVersion` is an immutable version of that item.
-- A `spl:PatternModule` packages reusable SHACL material.
-- An `spl:ExecutableModule` is a module that is executable without unresolved
+- A `spc:ValidationPattern` is the conceptual catalogue item.
+- A `spc:PatternVersion` is an immutable version of that item.
+- A `spc:PatternModule` packages reusable SHACL material.
+- An `spc:ExecutableModule` is a module that is executable without unresolved
   bindings; it is also a `dcat:Dataset`.
-- A `spl:PatternTemplate` still requires declared bindings or specialisation.
-- `spl:PatternRole`, `spl:Parameter`, `spl:Mapping`, and `spl:Assembly` name
+- A `spc:PatternTemplate` still requires declared bindings or specialisation.
+- `spc:PatternRole`, `spc:Parameter`, `spc:Mapping`, and `spc:Assembly` name
   supporting architectural resources without yet prescribing their relations.
 
 The Schema.org projection is not asserted in this ontology. In particular,
@@ -31,11 +31,12 @@ validation designs.
 
 ## Validation
 
-Validate the OntPub MUST requirements with [Kurra](https://github.com/Kurrawong/kurra) locally cached Ontology
-Publication Profile validator (currently validator ID 20):
+Validate the OntPub MUST requirements with the locally cached Ontology
+Publication Profile validator in [Kurra](https://github.com/Kurrawong/kurra)
+(currently validator ID 20):
 
 ```shell
-kurra shacl validate ontology/spl.ttl -s 20 --hide-warnings
+kurra shacl validate ontology/spc.ttl -s 20 --hide-warnings
 ```
 
 Kurra renders validation results with Rich before a pager receives them.
@@ -44,7 +45,7 @@ truncated to the detected terminal width. When sending the output through a
 pipe, set a wider virtual terminal first:
 
 ```shell
-COLUMNS=320 kurra shacl validate ontology/spl.ttl -s 20 | less -S
+COLUMNS=320 kurra shacl validate ontology/spc.ttl -s 20 | less -S
 ```
 
 Increase `COLUMNS` further for unusually long focus-node IRIs or messages. A
